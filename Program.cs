@@ -1,7 +1,13 @@
-﻿Console.Write("Введи число: ");
-int Number = int.Parse(Console.ReadLine());
-Number = Console.Read ();
-if (Number > 99)
-    Console.WriteLine((n / 100) % 10);
-else
-    Console.WriteLine("-> третьей цифры нет");
+﻿Console.Write("Введи цифру, для обозначения дня недели: ");
+int dayNumber = int.Parse(Console.ReadLine());
+void CheckingTheDayOfTheWeek (int dayNumber) {
+    if (dayNumber == 6 || dayNumber == 7) {
+        Console.WriteLine("(этот день выходной) -> да");
+    }
+    else if (dayNumber < 1 || dayNumber > 7) {
+        Console.WriteLine("это вообще не день недели");
+    }
+    else Console.WriteLine("(этот день не выходной) -> нет");
+}
+CheckingTheDayOfTheWeek(dayNumber);
+
