@@ -1,4 +1,7 @@
-﻿Console.Write("Введи трёхзначное число: ");
-int threeNumber = int.Parse(Console.ReadLine());
-string stringNumber = Convert.ToString(threeNumber);
-Console.WriteLine("вторая цифра этого числа -> "+stringNumber[1]);
+﻿Console.Write("Введи число: ");
+int Number = int.Parse(Console.ReadLine());
+Number = Console.Read ();
+if (Number > 99)
+    Console.WriteLine((n / 100) % 10);
+else
+    Console.WriteLine("-> третьей цифры нет");
